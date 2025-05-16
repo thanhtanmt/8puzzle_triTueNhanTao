@@ -292,19 +292,19 @@ AND-OR Search đơn giản về mặt xử lý, nhưng không hiệu quả trong
   <tr>
     <td align="backtracking">
       <img src="gif/backtracking.gif" width="150"/><br/>
-      <sub>Ảnh 1</sub>
+      <sub>backtracking</sub>
     </td>
-    <td align="forwarc checking">
+    <td align="forward checking">
       <img src="gif/forward.gif" width="150"/><br/>
-      <sub>Ảnh 2</sub>
+      <sub>forward checking</sub>
     </td>
     <td align="min conflicts">
       <img src="gif/min.gif" width="150"/><br/>
-      <sub>Ảnh 3</sub>
+      <sub>min conficts</sub>
     </td>
     <td align="thay đổi cấu trúc thuật toán để giải 8puzzle thường">
       <img src="gif/5.gif" width="150"/><br/>
-      <sub>Ảnh 3</sub>
+      <sub>thay đổi cấu trúc thuật toán để giải 8puzzle thường</sub>
     </td>
   </tr>
 </table>
