@@ -1,27 +1,26 @@
 # 8-Puzzle Solver - AI Project
 
+##  Mục lục
 
-Giới thiệu bài toán 8-Puzzle
+1. [Giới thiệu](#1-giới-thiệu-bài-toán-8-puzzle)
+2. [Mục tiêu](#2-mục-tiêu)
+3. [Nội dung dự án](#3-nội-dung-dự-án)
+   - [3.1. Uninformed Search](#31-thuật-toán-tìm-kiếm-không-có-thông-tin-uninformed-search)
+   - [3.2. Informed Search](#32-nhóm-thuật-toán-tìm-kiếm-có-thông-tin-informed-search)
+   - [3.3. Local Search](#33-nhóm-thuật-toán-tìm-kiếm-cục-bộ-local-optimization)
+   - [3.4. Tìm kiếm trong môi trường phức tạp](#34-nhóm-thuật-toán-tìm-kiếm-trong-môi-trường-phức-tạp)
+   - [3.5. CSP](#35-nhóm-thuật-toán-thỏa-ràng-buộc-constraint-satisfaction-problem---csp)
+   - [3.6. Reinforcement Learning](#36-nhóm-thuật-toán-học-tăng-cường-reinforcement-learning---rl)
+4. [Hướng dẫn sử dụng](#4-hướng-dẫn-cách-sử-dụng)
+5. [Tác giả](#5-tác-giả)
+6. [Tài liệu tham khảo](#6-tài-liệu-tham-khảo)
+
+## 1. Giới thiệu bài toán 8-Puzzle
 
 
 Bài toán 8-Puzzle là một dạng trò chơi trí tuệ kinh điển, thường được sử dụng trong giảng dạy và nghiên cứu các thuật toán tìm kiếm trong lĩnh vực trí tuệ nhân tạo. Bài toán được định nghĩa trên một bảng gồm 9 ô vuông được sắp xếp thành lưới 3x3, trong đó có 8 ô chứa các con số từ 1 đến 8 và một ô trống (thường được biểu diễn bằng số 0).
 
 Mục tiêu của bài toán là di chuyển các ô theo hướng lên, xuống, trái hoặc phải sao cho đạt được trạng thái mục tiêu cụ thể — thông thường là sắp xếp các số theo thứ tự tăng dần từ trái sang phải, từ trên xuống dưới, và ô trống nằm ở góc dưới bên phải.
-
-##  Mục lục
-
-1. [Giới thiệu](#giới-thiệu)
-2. [Mục tiêu](#1-mục-tiêu)
-3. [Nội dung dự án](#2-nội-dung-dự-án)
-   - [2.1. Uninformed Search](#21-thuật-toán-tìm-kiếm-không-có-thông-tin)
-   - [2.2. Informed Search](#22-nhóm-thuật-toán-tìm-kiếm-có-thông-tin)
-   - [2.3. Local Search](#23-nhóm-thuật-toán-tìm-kiếm-cục-bộ)
-   - [2.4. Tìm kiếm trong môi trường phức tạp](#24-nhóm-thuật-toán-tìm-kiếm-trong-môi-trường-phức-tạp)
-   - [2.5. CSP](#25-nhóm-thuật-toán-thỏa-ràng-buộc)
-   - [2.6. Reinforcement Learning](#26-nhóm-thuật-toán-học-tăng-cường)
-4. [Hướng dẫn sử dụng](#hướng-dẫn-cách-sử-dụng)
-5. [Tác giả](#3-tác-giả)
-6. [Tài liệu tham khảo](#4-tài-liệu-tham-khảo)
 
 **Cấu trúc bài toán**:
 
@@ -43,7 +42,7 @@ Hàm đánh giá (Heuristic, nếu có): Trong các thuật toán có thông tin
 
 Bài toán 8-Puzzle không chỉ đơn thuần là một trò chơi mà còn là mô hình lý tưởng để nghiên cứu các thuật toán tìm kiếm, từ cơ bản đến nâng cao. Với kích thước nhỏ gọn nhưng đủ phức tạp, nó cho phép triển khai và so sánh hiệu suất của nhiều chiến lược giải quyết vấn đề như tìm kiếm không có thông tin, tìm kiếm có hướng dẫn (heuristic), tìm kiếm cục bộ, và học tăng cường.
 
-## 1. Mục tiêu
+## 2. Mục tiêu
 
 - Mục tiêu chính của dự án này là xây dựng một hệ thống phần mềm có khả năng giải quyết bài toán 8-Puzzle bằng cách triển khai, thử nghiệm và đánh giá nhiều nhóm thuật toán tìm kiếm khác nhau trong lĩnh vực trí tuệ nhân tạo. Thông qua đó, người học và người nghiên cứu có thể:
 
@@ -59,9 +58,9 @@ Bài toán 8-Puzzle không chỉ đơn thuần là một trò chơi mà còn là
 
 - Dự án không chỉ phục vụ mục tiêu học thuật, mà còn mang tính thực tiễn cao trong việc trang bị cho người học kiến thức nền tảng về các phương pháp giải quyết bài toán trong môi trường có không gian trạng thái lớn, giới hạn quan sát, và biến thiên phức tạp — vốn là những đặc trưng phổ biến của các hệ thống thông minh trong thế giới thực.
 
-## 2. Nội dung dự án
+## 3. Nội dung dự án
 
-## 2.1. Thuật toán tìm kiếm không có thông tin (Uninformed Search)
+### 3.1. Thuật toán tìm kiếm không có thông tin (Uninformed Search)
 
 **Minh họa:**
 ![Nhóm 1](gif/nhom1.gif)
@@ -70,7 +69,7 @@ Nhóm thuật toán này hoạt động mà không có bất kỳ hiểu biết 
 
 Cấu hình sử dụng trong thử nghiệm:
 
-### a. Breadth-First Search (BFS)
+#### a. Breadth-First Search (BFS)
 
 BFS duyệt theo từng lớp, mở rộng các trạng thái cùng mức độ trước khi đi sâu hơn. Điều này đảm bảo nếu có lời giải thì lời giải tìm được là ngắn nhất (về số bước).
 
@@ -78,7 +77,7 @@ BFS duyệt theo từng lớp, mở rộng các trạng thái cùng mức độ 
 
 **Nhược điểm**: Bộ nhớ tiêu tốn rất lớn do cần lưu toàn bộ trạng thái tại mỗi cấp độ.
 
-### b. Depth-First Search (DFS)
+#### b. Depth-First Search (DFS)
 
 DFS đi sâu vào một nhánh trước khi quay lại và thử nhánh khác. Không yêu cầu nhiều bộ nhớ như BFS nhưng lại tiềm ẩn nguy cơ lặp vô hạn nếu không có cơ chế kiểm soát.
 
@@ -86,7 +85,7 @@ DFS đi sâu vào một nhánh trước khi quay lại và thử nhánh khác. K
 
 **Nhược điểm**: Không đảm bảo tìm được lời giải tối ưu, dễ rơi vào vòng lặp hoặc nhánh sai.
 
-### c. Uniform-Cost Search (UCS)
+#### c. Uniform-Cost Search (UCS)
 
 UCS tương tự BFS nhưng mở rộng trạng thái theo tổng chi phí từ đầu đến trạng thái hiện tại. Trong trường hợp chi phí mỗi bước là như nhau (như 8-Puzzle), UCS và BFS sẽ cho kết quả tương đương.
 
@@ -94,7 +93,7 @@ UCS tương tự BFS nhưng mở rộng trạng thái theo tổng chi phí từ 
 
 **Nhược điểm**: Cần sử dụng hàng đợi ưu tiên, có thể tiêu tốn thời gian và bộ nhớ.
 
-### d. Iterative Deepening Search (IDS)
+#### d. Iterative Deepening Search (IDS)
 
 IDS kết hợp giữa DFS và BFS bằng cách lặp lại DFS với độ sâu tăng dần. Mỗi vòng lặp sẽ duyệt lại từ đầu nhưng chỉ đến một mức độ sâu nhất định.
 
@@ -106,7 +105,7 @@ IDS kết hợp giữa DFS và BFS bằng cách lặp lại DFS với độ sâu
 
 Trong nhóm này, IDS nổi bật nhờ sự cân bằng giữa tiêu tốn tài nguyên và hiệu quả tìm kiếm. DFS tuy nhanh và nhẹ nhưng dễ sai lệch, trong khi BFS và UCS phù hợp với bài toán có dung lượng trạng thái nhỏ hoặc trung bình do yêu cầu bộ nhớ lớn.
 
-## 2.2. Nhóm thuật toán tìm kiếm có thông tin (Informed Search)
+### 3.2. Nhóm thuật toán tìm kiếm có thông tin (Informed Search)
 <table>
   <tr>
     <td align="greendy">
@@ -128,7 +127,7 @@ Trong nhóm này, IDS nổi bật nhờ sự cân bằng giữa tiêu tốn tài
 
 Các thuật toán trong nhóm này được gọi là “có thông tin” vì chúng sử dụng một hàm đánh giá (heuristic) để ước lượng khoảng cách từ trạng thái hiện tại đến trạng thái mục tiêu. Nhờ đó, quá trình tìm kiếm có thể được dẫn dắt một cách hiệu quả hơn, thay vì dò dẫm như các thuật toán không có thông tin.
 
-## Thuật toán Greedy Best-First Search (GBFS)
+#### Thuật toán Greedy Best-First Search (GBFS)
 
 GBFS lựa chọn trạng thái kế tiếp dựa trên giá trị heuristic thấp nhất. Nó không quan tâm đến chi phí đã bỏ ra để đến trạng thái đó, mà chỉ tập trung vào việc tiến gần mục tiêu nhanh nhất có thể.
 
@@ -136,7 +135,7 @@ GBFS lựa chọn trạng thái kế tiếp dựa trên giá trị heuristic th�
 
 **Nhược điểm**: Dễ mắc kẹt tại cực trị cục bộ nếu hàm heuristic không đủ chính xác. Không đảm bảo tìm được lời giải tối ưu.
 
-## Thuật toán A* (A-Star)
+#### Thuật toán A* (A-Star)
 
 A* sử dụng hàm đánh giá f(n) = g(n) + h(n), trong đó:
 
@@ -144,13 +143,13 @@ g(n): chi phí đã đi từ trạng thái khởi đầu đến trạng thái hi
 
 h(n): chi phí ước lượng từ trạng thái hiện tại đến mục tiêu.
 
-## Thuật toán này cân bằng giữa chi phí đã bỏ ra và tiềm năng còn lại, nhờ đó có khả năng tìm được lời giải tối ưu nếu hàm h(n) là chấp nhận được (không đánh giá quá cao).
+#### Thuật toán này cân bằng giữa chi phí đã bỏ ra và tiềm năng còn lại, nhờ đó có khả năng tìm được lời giải tối ưu nếu hàm h(n) là chấp nhận được (không đánh giá quá cao).
 
 **Ưu điểm**: Tìm được lời giải tối ưu, hoạt động ổn định.
 
 **Nhược điểm**: Tốn nhiều bộ nhớ vì phải lưu trữ nhiều trạng thái trong hàng đợi ưu tiên.
 
-## Thuật toán Iterative Deepening A* (IDA*)
+#### Thuật toán Iterative Deepening A* (IDA*)
 
 IDA* là sự kết hợp giữa A* và DFS. Thay vì lưu trữ toàn bộ trạng thái như A*, IDA* thực hiện tìm kiếm theo độ sâu tăng dần dựa trên giá trị f(n). Khi vượt quá một giới hạn cho trước, thuật toán sẽ quay lại và tăng giới hạn lên mức mới.
 
@@ -160,7 +159,7 @@ IDA* là sự kết hợp giữa A* và DFS. Thay vì lưu trữ toàn bộ tr�
 
 Trong nhóm này, A* là lựa chọn hàng đầu nếu hệ thống có đủ tài nguyên bộ nhớ, do vừa đảm bảo lời giải ngắn nhất vừa hiệu quả trong dẫn hướng tìm kiếm. Ngược lại, IDA* phù hợp với môi trường giới hạn tài nguyên, trong khi GBFS được ưu tiên khi cần tốc độ, không quan trọng tối ưu.
 
-## 2.3. Nhóm thuật toán tìm kiếm cục bộ (Local Optimization)
+### 3.3. Nhóm thuật toán tìm kiếm cục bộ (Local Optimization)
 
 **Minh họa:**
 
@@ -200,7 +199,7 @@ Tìm kiếm cục bộ là chiến lược giải quyết bài toán bằng các
 
 Các thuật toán trong nhóm này thường không đảm bảo tìm được lời giải tối ưu toàn cục mà chỉ hướng đến cực trị cục bộ, trừ khi có cơ chế giúp thoát khỏi các điểm kẹt.
 
-##  Simple Hill Climbing (SHC)
+####  Simple Hill Climbing (SHC)
 
 SHC là thuật toán đơn giản nhất trong nhóm này. Nó kiểm tra các trạng thái lân cận theo thứ tự, và nếu tìm thấy một trạng thái tốt hơn, nó chuyển ngay đến đó.
 
@@ -208,7 +207,7 @@ SHC là thuật toán đơn giản nhất trong nhóm này. Nó kiểm tra các 
 
 **Nhược điểm**: Dễ mắc kẹt tại cực trị cục bộ vì không có cơ chế quay lui hoặc đánh giá toàn cục.
 
-## Steepest Ascent Hill Climbing (SAHC)
+#### Steepest Ascent Hill Climbing (SAHC)
 
 Khác với SHC, SAHC sẽ đánh giá toàn bộ các trạng thái lân cận và chọn trạng thái tốt nhất để di chuyển đến.
 
@@ -216,7 +215,7 @@ Khác với SHC, SAHC sẽ đánh giá toàn bộ các trạng thái lân cận 
 
 **Nhược điểm**: Tốn nhiều thời gian hơn SHC do phải đánh giá toàn bộ lân cận.
 
-## Random Hill Climbing (RHC)
+#### Random Hill Climbing (RHC)
 
 RHC cũng giống SHC nhưng chọn trạng thái lân cận một cách ngẫu nhiên thay vì theo thứ tự. Nếu trạng thái đó tốt hơn, nó sẽ di chuyển.
 
@@ -224,7 +223,7 @@ RHC cũng giống SHC nhưng chọn trạng thái lân cận một cách ngẫu 
 
 **Nhược điểm**: Không ổn định, có thể bỏ lỡ trạng thái tốt nhất do lựa chọn ngẫu nhiên.
 
-## Simulated Annealing (SA)
+#### Simulated Annealing (SA)
 
 SA sử dụng một kỹ thuật gọi là “làm nguội” – cho phép chấp nhận cả những trạng thái tệ hơn hiện tại với một xác suất nhất định, nhằm mục tiêu thoát khỏi cực trị cục bộ.
 
@@ -232,7 +231,7 @@ SA sử dụng một kỹ thuật gọi là “làm nguội” – cho phép ch�
 
 **Nhược điểm**: Cần điều chỉnh các tham số (nhiệt độ, tốc độ nguội) hợp lý, thời gian chạy dài hơn.
 
-## Beam Search
+#### Beam Search
 
 Thuật toán này giữ một số lượng trạng thái tốt nhất (gọi là beam width) trong mỗi bước, thay vì chỉ một như Hill Climbing.
 
@@ -240,7 +239,7 @@ Thuật toán này giữ một số lượng trạng thái tốt nhất (gọi l
 
 **Nhược điểm**: Nếu beam width quá nhỏ, dễ bị bỏ lỡ trạng thái tốt hơn.
 
-## Genetic Algorithm (GA)
+#### Genetic Algorithm (GA)
 
 GA mô phỏng quá trình tiến hóa tự nhiên thông qua chọn lọc, lai ghép và đột biến trên một quần thể trạng thái. Mỗi cá thể đại diện cho một lời giải.
 
@@ -252,11 +251,11 @@ GA mô phỏng quá trình tiến hóa tự nhiên thông qua chọn lọc, lai 
 
 Nhóm Hill Climbing (SHC, SAHC, RHC) có **Ưu điểm** về tốc độ nhưng dễ mắc kẹt tại cực trị cục bộ. SA và GA có khả năng tìm lời giải tốt hơn nhờ chiến lược thoát kẹt thông minh, tuy nhiên cần nhiều thời gian và tài nguyên. Beam Search là lựa chọn cân bằng, nhưng phụ thuộc vào kích thước beam.
 
-## 2.4. Nhóm thuật toán tìm kiếm trong môi trường phức tạp
+### 3.4. Nhóm thuật toán tìm kiếm trong môi trường phức tạp
 
 Nhóm thuật toán này được thiết kế để xử lý các bài toán trong điều kiện không đầy đủ thông tin hoặc không xác định, khi mà trạng thái hiện tại không thể được quan sát hoàn toàn hoặc kết quả của hành động không chắc chắn. Trong 8-Puzzle, điều này được mô phỏng bằng cách tạo ra các trạng thái không rõ ràng (gọi là belief states) và yêu cầu thuật toán tìm lời giải mà tất cả các khả năng đều dẫn tới trạng thái mục tiêu.
 
-## AND-OR Search
+#### AND-OR Search
 
 AND-OR Search là một chiến lược giải bài toán trong môi trường không xác định bằng cách xây dựng cây tìm kiếm có chứa cả nhánh OR (lựa chọn hành động) và nhánh AND (tất cả các kết quả đều phải thỏa mãn). Thuật toán cố gắng tìm một kế hoạch đảm bảo rằng bất kể điều gì xảy ra, trạng thái mục tiêu vẫn có thể đạt được.
 
@@ -268,7 +267,7 @@ AND-OR Search là một chiến lược giải bài toán trong môi trường k
 
 ![Nhóm 3](gif/andor.gif)
 
-## Belief State Search
+#### Belief State Search
 
 Trong Belief Search, thay vì làm việc với một trạng thái đơn lẻ, thuật toán duy trì một tập hợp các trạng thái khả dĩ (gọi là belief state), đại diện cho sự không chắc chắn. Khi hành động được thực hiện, tập trạng thái được cập nhật theo luật chuyển trạng thái có xác suất.
 
@@ -281,7 +280,7 @@ Trong Belief Search, thay vì làm việc với một trạng thái đơn lẻ, 
 ![Nhóm 3](gif/belief.gif)
 
 
-## Partial Observable Search (POS)
+#### Partial Observable Search (POS)
 
 POS là một cải tiến từ Belief Search, nơi hệ thống có thể quan sát được một phần trạng thái (ví dụ: biết số 1 nằm ở góc trên trái). Dựa vào thông tin quan sát được, POS có thể loại bỏ sớm các trạng thái không phù hợp, từ đó thu hẹp không gian tìm kiếm.
 
@@ -301,7 +300,7 @@ Belief Search phù hợp trong môi trường không có thông tin, nhưng hi�
 
 AND-OR Search đơn giản về mặt xử lý, nhưng không hiệu quả trong môi trường có nhiều trạng thái khả dĩ do không thu gọn được nhánh AND.
 
-## 2.5. Nhóm thuật toán thỏa ràng buộc (Constraint Satisfaction Problem - CSP)
+### 3.5. Nhóm thuật toán thỏa ràng buộc (Constraint Satisfaction Problem - CSP)
 
 <table>
   <tr>
@@ -329,7 +328,7 @@ Bài toán thỏa ràng buộc (CSP) là một lớp bài toán trong đó mục
 
 Trong ngữ cảnh 8-Puzzle, bài toán CSP được xây dựng bằng cách xem mỗi ô vuông là một biến, và các giá trị cần gán là các số từ 0 đến 8, với những ràng buộc nhất định như: mỗi số chỉ xuất hiện một lần, phải tạo thành trạng thái giải được, và tuân thủ một vài quy tắc hình học cụ thể (ví dụ ô sau lớn hơn ô trước, theo hàng hoặc cột).
 
-## Backtracking Search
+#### Backtracking Search
 
 Là chiến lược cơ bản nhất, thực hiện việc gán giá trị theo thứ tự và quay lui khi gặp xung đột. Thuật toán duyệt cây trạng thái theo chiều sâu, và quay lại khi phát hiện không thể tiếp tục.
 
@@ -337,7 +336,7 @@ Là chiến lược cơ bản nhất, thực hiện việc gán giá trị theo 
 
 **Nhược điểm**: Tốn thời gian khi không có chiến lược chọn biến tốt.
 
-## Forward Checking
+#### Forward Checking
 
 Là một mở rộng của Backtracking, sử dụng kỹ thuật kiểm tra trước (forward checking) để loại bỏ giá trị không hợp lệ khỏi miền của các biến chưa gán sau mỗi lần gán. Có thể kết hợp thêm chiến lược chọn biến như:
 
@@ -349,7 +348,7 @@ LCV (Least Constraining Value): chọn giá trị ít làm hẹp lựa chọn c�
 
 **Nhược điểm**: Tốn công tính toán miền hợp lệ mỗi bước.
 
-## Min-Conflicts
+#### Min-Conflicts
 
 Chiến lược này bắt đầu với một trạng thái đầy đủ (có thể không hợp lệ), và liên tục điều chỉnh các biến gây xung đột sao cho số lượng vi phạm giảm dần.
 
@@ -365,7 +364,7 @@ Forward Checking thích hợp khi cần đảm bảo tính chính xác, nhưng p
 
 Backtracking phù hợp để minh họa nguyên lý cơ bản, nhưng không nên dùng cho không gian tìm kiếm lớn hoặc nhiều ràng buộc chặt chẽ.
 
-## 2.6. Nhóm thuật toán học tăng cường (Reinforcement Learning - RL)
+### 3.6. Nhóm thuật toán học tăng cường (Reinforcement Learning - RL)
 
 **Minh họa:**
 
@@ -375,7 +374,7 @@ Học tăng cường là một nhánh quan trọng của trí tuệ nhân tạo,
 
 Trong bài toán 8-Puzzle, tác nhân sẽ bắt đầu từ trạng thái ban đầu và thực hiện các hành động (di chuyển ô trống) để đạt đến trạng thái mục tiêu. Mỗi hành động đều được gán phần thưởng, và thuật toán sẽ học dần cách hành động sao cho tổng phần thưởng tích lũy là cao nhất.
 
-## Q-Learning
+#### Q-Learning
 
 Đây là một thuật toán cơ bản và phổ biến trong học tăng cường, hoạt động theo nguyên tắc cập nhật giá trị Q (Q-value) cho mỗi cặp trạng thái – hành động. Giá trị này thể hiện “lợi ích kỳ vọng” của hành động đó tại trạng thái đó.
 
@@ -429,7 +428,7 @@ Trong 8-Puzzle, thuật toán này đóng vai trò mô phỏng và minh họa, k
 
 Với đủ thời gian huấn luyện và dữ liệu tương tác, Q-Learning vẫn có khả năng hội tụ về chính sách giải đúng.
 
-##  Tổng so sánh giữa các nhóm thuật toán
+###  Tổng so sánh giữa các nhóm thuật toán
 
 
 
@@ -446,7 +445,7 @@ Với đủ thời gian huấn luyện và dữ liệu tương tác, Q-Learning 
 
 ![Nhóm 3](gif/chart_pic.png)
 
-## Hướng dẫn cách sử dụng 
+## 4. Hướng dẫn cách sử dụng 
 **Yêu cầu tối thiểu là python 3.6**
 -  Khuyến khích sử dụng visual studio Code
 
@@ -468,7 +467,7 @@ Với đủ thời gian huấn luyện và dữ liệu tương tác, Q-Learning 
 
 ![Nhóm 3](gif/nhan.png)
 
-## 3. Tác giả
+## 5. Tác giả
 
 Dự án được thực hiện bởi:
 
@@ -488,7 +487,7 @@ So sánh hiệu suất giữa các hướng tiếp cận khác nhau.
 
 Tăng cường kỹ năng lập trình, phân tích và trình bày học thuật.
 
-## 4. Tài liệu tham khảo
+## 6. Tài liệu tham khảo
 
 1. Stuart Russell & Peter Norvig (2020), Artificial Intelligence: A Modern Approach, 4th Edition, Pearson.
 
