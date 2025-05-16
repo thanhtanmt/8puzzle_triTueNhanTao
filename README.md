@@ -8,6 +8,21 @@ Bài toán 8-Puzzle là một dạng trò chơi trí tuệ kinh điển, thườ
 
 Mục tiêu của bài toán là di chuyển các ô theo hướng lên, xuống, trái hoặc phải sao cho đạt được trạng thái mục tiêu cụ thể — thông thường là sắp xếp các số theo thứ tự tăng dần từ trái sang phải, từ trên xuống dưới, và ô trống nằm ở góc dưới bên phải.
 
+##  Mục lục
+
+1. [Giới thiệu](#giới-thiệu)
+2. [Mục tiêu](#1-mục-tiêu)
+3. [Nội dung dự án](#2-nội-dung-dự-án)
+   - [2.1. Uninformed Search](#21-thuật-toán-tìm-kiếm-không-có-thông-tin)
+   - [2.2. Informed Search](#22-nhóm-thuật-toán-tìm-kiếm-có-thông-tin)
+   - [2.3. Local Search](#23-nhóm-thuật-toán-tìm-kiếm-cục-bộ)
+   - [2.4. Tìm kiếm trong môi trường phức tạp](#24-nhóm-thuật-toán-tìm-kiếm-trong-môi-trường-phức-tạp)
+   - [2.5. CSP](#25-nhóm-thuật-toán-thỏa-ràng-buộc)
+   - [2.6. Reinforcement Learning](#26-nhóm-thuật-toán-học-tăng-cường)
+4. [Hướng dẫn sử dụng](#hướng-dẫn-cách-sử-dụng)
+5. [Tác giả](#3-tác-giả)
+6. [Tài liệu tham khảo](#4-tài-liệu-tham-khảo)
+
 **Cấu trúc bài toán**:
 
 Trạng thái (State): Mỗi cấu hình của lưới 3x3 tương ứng với một trạng thái cụ thể của bài toán.
